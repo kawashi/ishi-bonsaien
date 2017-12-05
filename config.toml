@@ -1,8 +1,10 @@
-baseurl = "https://example.org/"
+baseurl = "https://kawashi.github.io/ishi-bonsaien"
+#baseurl = "http://localhost"
 languageCode = "ja"
 title = "石井盆栽園"
 theme = "hugo-creative-theme"
 googleAnalytics = ""
+canonifyurls = true
 
 [params]
 
@@ -91,9 +93,3 @@ googleAnalytics = ""
 		description = "購入希望の方、購入を考えている方のご連絡お待ちしております。"
 		phone = "123-456-6789"
 		email = "test@example.com"
-
-	# Google Maps section
-	[params.location]
-		latitude  = "35.756685"
-		longitude = "140.028823"
-		maps_api_key = ""
