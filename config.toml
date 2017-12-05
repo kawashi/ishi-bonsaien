@@ -1,0 +1,99 @@
+baseurl = "https://example.org/"
+languageCode = "ja"
+title = "石井盆栽園"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Your name"
+	description = "Your description"
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "石井盆栽園"
+
+		[params.navigation.links]
+			about     = "石井盆栽園とは？"
+			services  = "特徴"
+			portfolio = "盆栽の種類"
+			contact   = "連絡先"
+
+
+	# トップ
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "石井盆栽園"
+		subtitle   = "簡単な説明"
+		buttonText = "もっと知る"
+
+
+	# 概要
+	[params.about]
+		headline    = "石井盆栽園とは？"
+		description = "**概要**"
+		buttonText  = "連絡する"
+
+
+	# 特徴
+	[params.services]
+		headline = "盆栽の種類"
+
+        [[params.services.list]]
+            icon = "fa-diamond"
+            title = "特徴1"
+            description = "説明"
+
+        [[params.services.list]]
+			icon = "fa-paper-plane"
+			title = "特徴2"
+			description = "説明"
+
+		[[params.services.list]]
+            icon = "fa-newspaper-o"
+            title = "特徴3"
+            description = "説明"
+
+        [[params.services.list]]
+            icon = "fa-heart"
+            title = "特徴4"
+            description = "説明"
+
+
+    # 盆栽の種類
+	[params.portfolio.modal]
+        client = "Client"
+        date = "Date"
+        category = "Category"
+        buttonText = "Close"
+
+	# 連絡先
+	[params.contact]
+		headline = "石井盆栽園に連絡する"
+		description = "購入希望の方、購入を考えている方のご連絡お待ちしております。"
+		phone = "123-456-6789"
+		email = "test@example.com"
+
+	# Google Maps section
+	[params.location]
+		latitude  = "35.756685"
+		longitude = "140.028823"
+		maps_api_key = ""
